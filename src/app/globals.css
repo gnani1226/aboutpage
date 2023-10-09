@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -24,4 +24,127 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+} */
+/* 
+.card-gradient-right {
+  background-image: radial-gradient(at 0% 100%,rgb(3, 54, 71),rgb(3,7,18),rgb(3,7,18),rgb(3,7,18));
+  background-image: radial-gradient(at right,rgba(12, 49, 46, 0.919),transparent);
+} */
+.card-gradient-tl {
+  background-image: radial-gradient(at 0% 0%,rgb(3, 54, 71),rgb(3,7,18),rgb(3,7,18),rgb(3,7,18));
 }
+.card-gradient-tr {
+  background-image: radial-gradient(at 100% 0%,rgb(3, 54, 71),rgb(3,7,18),rgb(3,7,18),rgb(3,7,18));
+}
+.card-gradient-bl {
+  background-image: radial-gradient(at 0% 100%,rgb(3, 54, 71),rgb(3,7,18),rgb(3,7,18),rgb(3,7,18));
+}
+.card-gradient-br {
+  background-image: radial-gradient(at 100% 100%,rgb(3, 54, 71),rgb(3,7,18),rgb(3,7,18),rgb(3,7,18));
+}
+
+.community-icon{
+    background-image:
+        linear-gradient(to left, rgba(0, 100, 110, 0.1) 1px, transparent 0px),
+        linear-gradient(to top, rgba(0, 100, 110, 0.1) 1px, transparent 0px);
+    background-size: 4rem 4rem;
+    border: none;
+}
+
+.join-image{
+  background-image: url("https://res.cloudinary.com/dfuwiecz0/image/upload/v1696505761/3d-effect-teamwork-concept-background_52683-29714_fqy7ao.avif");
+  background-size: cover;
+}
+
+.custom-animate{
+  /* animation: all ease-in-out 2s; */
+  transform: translateX(0);
+}
+
+main div:first-child {
+  transform: translateX(-150%);
+  opacity: 0;
+}
+main div:last-child {
+  transform: translateX(150%);
+  opacity: 0;
+}
+
+.slide-in {
+  transform: translateX(0) !important;
+  opacity: 1 !important;
+}
+
+.zoom-in {
+  animation: zoomIn 1s ease-in;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.flyout-container{
+    animation: fly-out 1s ease-out;
+}
+@keyframes fly-out {
+    0% {
+        transform:translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    }
+
+.flyin-container{
+      animation: fly-in 1s ease-out;
+  }
+  @keyframes fly-in {
+      0% {
+          transform:translateY(100%);
+          opacity: 0;
+      }
+  
+      100% {
+          transform: translateY(0);
+          opacity: 1;
+      }
+      }
+.flyleft-container{
+        animation: fly-in 1s ease-out;
+    }
+    @keyframes fly-in {
+        0% {
+            transform:translateX(0%);
+            opacity: 0;
+        }
+    
+        100% {
+            transform: translateX(100%);
+            opacity: 1;
+        }
+        }
+  .flyup-container{
+          animation: fly-up 1s ease-out;
+      }
+  @keyframes fly-up {
+    0% {
+        transform:translateY(100%);
+        opacity: 0;
+       }
+      
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+        }
+    }
