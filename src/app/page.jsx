@@ -223,7 +223,7 @@ export default function Home() {
       </div>
 
       {/* screenshot cards */}
-      <div className="w-full p-2 lg:w-[50%] mt-20 flex flex-col justify-center items-center">
+      <div className="w-full p-2 lg:w-[50%] mt-20 flex flex-col justify-center items-center overflow-hidden">
         <h1 className="text-4xl text-blue-200">What We Believe</h1>
         <p className="text-md lg:text-xl text-gray-400 text-center">
           Principles that dictate how we think, behave, and make decisions
